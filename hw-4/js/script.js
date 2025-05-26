@@ -1,3 +1,3 @@
-userName = prompt("Pick your name");
+const userName = prompt("Pick your name");
 
 alert(`Hello, ${userName}. How are you?`);
