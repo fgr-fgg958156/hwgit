@@ -7,7 +7,7 @@ let bonusCode = null;
 let secondName;
 
 //in this variable I use"if...else" = "condition ? if true : if false"
-message = alert(`Привіт, ${userName}!\nТвій вік: ${userAge}\nТвій статус: ${userParticipation ? "участь підтверджено" : "відмовився"}`);
+let message = alert(`Привіт, ${userName}!\nТвій вік: ${userAge}\nТвій статус: ${userParticipation ? "участь підтверджено" : "відмовився"}`);
 
 console.log("Ім'я:", userName, typeof userName);
 console.log("Вік:", userAge, typeof userAge);
