@@ -1,9 +1,16 @@
-# In this project, I created a simple "greeting" script.
+# Script about "User simulator for web application"
 
-This simple script demonstrates basic user interaction using JavaScript. The program implements the following functions:
+First In this script I created 8 variables with the appropriate types:
 
-1. Creating the right structure
-2. Using basic user interaction methods: prompt(), confirm(), alert(), variables and if...else
-3. Functionality for requesting a username.
-4. Obtaining permission to greet.
-5. Permission check.
+1. Username (string)
+2. Age (number)
+3. Is the user verified? (boolean)
+4. Registration date (string in date format)
+5. User card number (bigInt)
+6. Promo code (if any) (null or string)
+7. Backup name (undefined)
+8. Number of bonuses on the account (number)
+
+Second added in to the script "simulator.js" string "console.log"
+
+Third for each variable, output typeof to check the data types.
