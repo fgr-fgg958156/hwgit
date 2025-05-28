@@ -1,16 +1,11 @@
-# Script about "User simulator for web application"
+# Script about "Mini-user registration in the browser"
 
-First In this script I created 8 variables with the appropriate types:
+1. Asked for username via prompt → saved as string
+2. Asked for age via prompt, but converted it to a number → number
+3. Asked for user consent to participate via confirm → boolean
+4. Created a variable userId — as a large number → bigInt
+5. Created a bonusCode variable whose value will be null
+6. Created a variable secondName, which will remain undefined
 
-1. Username (string)
-2. Age (number)
-3. Is the user verified? (boolean)
-4. Registration date (string in date format)
-5. User card number (bigInt)
-6. Promo code (if any) (null or string)
-7. Backup name (undefined)
-8. Number of bonuses on the account (number)
-
-Second added in to the script "simulator.js" string "console.log"
-
-Third for each variable, output typeof to check the data types.
+First, Displayed alert
+Secornd, I output all variables along with their types to console.log():
