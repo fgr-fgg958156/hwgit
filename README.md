@@ -1,11 +1,20 @@
-# Script about "Mini-user registration in the browser"
+# Script about "User's personal card + friends list"
 
-1. Asked for username via prompt → saved as string
-2. Asked for age via prompt, but converted it to a number → number
-3. Asked for user consent to participate via confirm → boolean
-4. Created a variable userId — as a large number → bigInt
-5. Created a bonusCode variable whose value will be null
-6. Created a variable secondName, which will remain undefined
+## First, created a user object that has the following properties:
+1. name — string (username)
+2. age — number (age)
+3. isOnline — boolean value (whether online)
+4. friends — array of 3 friends' names (strings)
+5. settings — a nested object with fields:
+6. theme — string ("light" or "dark")
+7. notifications — булеве значення (чи увімкнено сповіщення)
 
-First, Displayed alert
-Secornd, I output all variables along with their types to console.log():
+### The second created a separate variable first FriendName, which gets the value of the first friend from the user.friends array.
+### The third created a separate variable notificationsEnabled, which will receive the value from user.settings.notifications.
+
+## Output to the console:
+* User name
+* Number of friends (not through a method, just .length)
+* First friend's name
+* What theme is enabled?
+* Are notifications turned on?

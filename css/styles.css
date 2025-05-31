@@ -1,3 +1,8 @@
 body{
-    background-color: cornflowerblue;
+    background-color: lightcoral;
+}
+
+h1{
+    color: firebrick;
+    font-family: "Comic Sans MS", cursive;
 }
