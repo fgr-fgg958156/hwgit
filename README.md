@@ -1,20 +1,28 @@
-# Script about "User's personal card + friends list"
+# Script about "Personal information + browser session"
 
-## First, created a user object that has the following properties:
-1. name — string (username)
-2. age — number (age)
-3. isOnline — boolean value (whether online)
-4. friends — array of 3 friends' names (strings)
-5. settings — a nested object with fields:
-6. theme — string ("light" or "dark")
-7. notifications — булеве значення (чи увімкнено сповіщення)
+Created a program that:
+- Receives input from the user via prompt and confirm
+- Creates a session object containing all the collected information
+- Has a nested object and an array
+- Uses all data types
 
-### The second created a separate variable first FriendName, which gets the value of the first friend from the user.friends array.
-### The third created a separate variable notificationsEnabled, which will receive the value from user.settings.notifications.
+## Steps:
 
-## Output to the console:
-* User name
-* Number of friends (not through a method, just .length)
-* First friend's name
-* What theme is enabled?
-* Are notifications turned on?
+1. Data collection via browser:
+   - Prompted for name (prompt) → string
+   - Asked for age → number (convert from string)
+   - Asked if user wants to receive notifications (confirm) → boolean
+   - Created a dummy userId as bigInt (you can just write it manually 1234567890123456789n)
+   - Set the lastLogin field to null
+   - Created a nickname field, but don't set a value (leave it undefined)
+   - Added an array favoriteTech of three technologies (any)
+   - Added a nested settings object with the fields:
+   - theme: "dark" or "light"
+   - autoLogin: false
+
+2. I created a session object that will contain all this data.
+
+3. Output:
+   * alert with short information: "Hello, [name]! Your ID is: [userId]"
+   * In console.log — the entire object
+   * In console.log — the type of each field (via typeof)
