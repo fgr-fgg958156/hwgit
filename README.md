@@ -1,8 +1,6 @@
-# Script about "Hours in seconds"
+# Script about "Run second: Average value"
 
-## I wrote a script that converts hours to seconds and does the following:
+## I created a script that determines the arithmetic mean of three numbers with the following conditions:
 
-* asks the user for the number of hours;
-* counts how many seconds are in that number of hours;
-* writes the calculated value to a variable;
-* displays this variable to the user via an alert.
+* Receives three numbers from the user via three prompts
+* Displays the arithmetic mean of these numbers via alert
