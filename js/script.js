@@ -1,21 +1,5 @@
-const user = {
-    name: "Kyryl",
-    age: 32,
-    isOnline: false,
-    friends: ["Mykhaylo", "Nazar", "Ksenia"],
-    settings: {
-        theme: "light",
-        notifications: false
-    }
-}
+const hours = +prompt ("Write number of hours");
 
-const firstFriendName = user.friends[0];
-const notificationsEnabled = user.settings.notifications;
+const secondsInHours = hours * 3600;
 
-console.table({
-    userName: user.name,
-    numFriends: user.friends.length,
-    firstFriendName: firstFriendName,
-    theme: user.settings.theme,
-    notificationsEnabled: notificationsEnabled
-})
+alert(`There are ${secondsInHours} seconds in ${hours} hours`);

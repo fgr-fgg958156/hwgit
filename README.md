@@ -1,20 +1,8 @@
-# Script about "User's personal card + friends list"
+# Script about "Hours in seconds"
 
-## First, created a user object that has the following properties:
-1. name — string (username)
-2. age — number (age)
-3. isOnline — boolean value (whether online)
-4. friends — array of 3 friends' names (strings)
-5. settings — a nested object with fields:
-6. theme — string ("light" or "dark")
-7. notifications — булеве значення (чи увімкнено сповіщення)
+## I wrote a script that converts hours to seconds and does the following:
 
-### The second created a separate variable first FriendName, which gets the value of the first friend from the user.friends array.
-### The third created a separate variable notificationsEnabled, which will receive the value from user.settings.notifications.
-
-## Output to the console:
-* User name
-* Number of friends (not through a method, just .length)
-* First friend's name
-* What theme is enabled?
-* Are notifications turned on?
+* asks the user for the number of hours;
+* counts how many seconds are in that number of hours;
+* writes the calculated value to a variable;
+* displays this variable to the user via an alert.
