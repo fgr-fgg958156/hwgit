@@ -1,113 +1,66 @@
 //task1
-let lineOfNums = '';
+let listOfValues = '';
 
-for (let i = 10; i <= 20; i++) {
-    lineOfNums += i + (i < 20 ? ', ' : '');
+for (let i = 20 ; i < 30; i+=0.5) {
+    listOfValues += i + ' ';
 }
-console.log(lineOfNums);
+
+console.log(listOfValues);
 
 //task2
-for (let i = 10; i < 20; i++) {
-    console.log(i ** 2);
+let dollarsCount = '';
+const dollarEquals = 27;
+
+for (let i = 10; i <= 100; i += 10) {
+    dollarsCount += `${i} dollars = ${i * dollarEquals}` + (i < 100 ? ', ' : '');
 }
+
+console.log(dollarsCount);
 
 //task3
-let multiplicationTableFor7 = [];
+const userNNumber = +prompt('write INTEGER NUMBER(first number)');
+let numArray = [];
 
-for (let i = 0; i <= 12; i++) {
-    multiplicationTableFor7.push(`${i} * 7 = ${i * 7}`);
+for(let i = 1; i <= 100; i++) {
+    if(i ** 2 < userNNumber){
+        numArray.push(i);
+    }
 }
 
-console.table(multiplicationTableFor7);
+console.table(numArray);
 
 //task4
-let integers = 0;
+const userPrimeNumber = +prompt('write INTEGER NUMBER(second number)');
+let userPrimeChecker;
 
-for (let i = 1; i < 15; i++) {
-    integers += i;
+for (let i = 2; i < userPrimeNumber; i++) {
+    if(userPrimeNumber % i === 0) {
+        userPrimeChecker = true;
+        break;
+    }
 }
 
-console.log(`sum of integers from 1 to 15 = ${integers}`);
+if(!userPrimeChecker && userPrimeNumber > 1){
+    console.log(`congratulations your number ${userPrimeNumber} is a PRIME number.`);
+}
+else{
+    console.log(`your number ${userPrimeNumber} is a regular number.`);
+}
 
 //task5
-let product = 1n;
+const userNumberN = +prompt('write random number(third number)');
+let userPowerNumber = 1;
+let power = 0;
 
-for (let i = 15n; i < 35n; i++) {
-    product *= i;
+while(userPowerNumber < userNumberN){
+    userPowerNumber *= 3;
+    power++;
 }
 
-console.log(`product from 15 to 35 = ${product}`);
-
-//task6
-let sumOfIntegers = 0;
-let lengthOfIntegers = 0;
-
-for (let i = 1; i <= 500; i++) {
-    sumOfIntegers += i;
-    lengthOfIntegers++;
+if(userNumberN === userPowerNumber){
+    console.log(`Your number is 3 to the power of ${power}`);
+}
+else{
+    console.log(`Your number isn't a power of 3`);
 }
 
-let averageOfIntegers = sumOfIntegers/lengthOfIntegers;
-console.log(`average of integers from 1 to 500 = ${averageOfIntegers}`);
-
-//task7
-let sumOfEvenNum= 0;
-
-for (let i = 30; i <= 80; i++) {
-    sumOfEvenNum += i % 2 === 0 ? i : 0;
-}
-
-console.log(`sum of even numbers from 30 to 80 = ${sumOfEvenNum}`);
-
-//task8
-let allNumsMultipleOf3 = [];
-
-for (let i = 100; i <= 200; i++) {
-    if(i % 3 === 0) {
-        allNumsMultipleOf3.push(i);
-    }
-}
-
-console.table(allNumsMultipleOf3);
-
-//task9
-const userNum = +prompt('write NATURAL number');
-let allFactorsOfUserNum = [];
-
-for(let i = 1; i <= userNum; i++) {
-    if(userNum % i === 0) {
-        allFactorsOfUserNum.push(i);
-    }
-}
-
-console.table(allFactorsOfUserNum);
-
-//task10
-let allEvenFactorsOfUserNum = [];
-
-for (let i = 0; i < allFactorsOfUserNum.length; i++) {
-    if(allFactorsOfUserNum[i] % 2 === 0) {
-        allEvenFactorsOfUserNum.push(allFactorsOfUserNum[i]);
-    }
-}
-
-console.log(`all even factors of USERNUMBER = ${allEvenFactorsOfUserNum.length}`);
-
-//task11
-let sumOfAllEvenFactorsOfUserNum = 0;
-
-for (let i = 0; i < allEvenFactorsOfUserNum.length; i++) {
-    sumOfAllEvenFactorsOfUserNum += allEvenFactorsOfUserNum[i];
-}
-
-console.log(`sum of all even factors of USERNUMBER = ${sumOfAllEvenFactorsOfUserNum}`);
-
-//task12
-let fullMultiplicationTable = [];
-
-for (let i = 1; i <= 10; i++) {
-    for (let c = 0; c <= 12; c++) {
-        fullMultiplicationTable.push(`${i} * ${c} = ${i*c}`);
-    }
-}
-console.table(fullMultiplicationTable);
