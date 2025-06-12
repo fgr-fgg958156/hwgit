@@ -1,3 +1,5 @@
+"use strict";
+
 function greetUser(userName){
     return `Привіт, ${userName}!`;
 }
