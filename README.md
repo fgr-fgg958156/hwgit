@@ -1,4 +1,4 @@
-# Implement the generateKey function
+# PadString
 
 ## Task
 Implemented the function generateKey(length, characters), which returns a string of random characters from the set characters with length length. span>
