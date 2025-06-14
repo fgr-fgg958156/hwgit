@@ -1,9 +1,14 @@
 "use strict";
 
-function greetUser(userName){
-    return `Привіт, ${userName}!`;
+function generateKey(length, characters){
+    let result = '';
+    for (let i = 0; i < length; i++){
+        result += characters[Math.floor(Math.random() * characters.length)];
+    }
+    return result;
 }
 
-const userName = prompt("Яке ваше ім'я?");
+const characters = 'abcdefghijklmnopqrstuvwxyz0123456789';
 
-console.log(greetUser(userName));
+const key = generateKey(16, characters);
+console.log(key);

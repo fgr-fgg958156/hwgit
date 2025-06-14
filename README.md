@@ -1,5 +1,4 @@
-# Script about "Watch the lesson and complete the task"
+# Implement the generateKey function
 
 ## Task
-* Wrote a function greetUser that takes one parameter — the username (a string)
-* and returns a string like this: "Hello, [NAME]!"
+Implemented the function generateKey(length, characters), which returns a string of random characters from the set characters with length length. span>
