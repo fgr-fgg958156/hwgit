@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="65f551f5-6362-4d5f-a554-22c7fec3fefd" name="Changes" comment="Completed hw-21 and edited readMe file">
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="hw-21" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;fgr-fgg958156&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/fgr-fgg958156/hwgit.git&quot;,
+    &quot;accountId&quot;: &quot;011b9e34-fbf1-4441-9c93-e12f4549a256&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2xjl5tY6ua9u8ufS3DyHAAz7DHa" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JavaScript Debug.index.html.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "hw-22",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/hillel/hwgit",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\hillel\hwgit" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/hwgit/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-WS-251.25410.117" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="65f551f5-6362-4d5f-a554-22c7fec3fefd" name="Changes" comment="" />
+      <created>1748459184357</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1748459184357</updated>
+      <workItem from="1748459186150" duration="660000" />
+      <workItem from="1748459851418" duration="42000" />
+      <workItem from="1748675484199" duration="3796000" />
+      <workItem from="1748681222074" duration="2072000" />
+      <workItem from="1748683406757" duration="153000" />
+      <workItem from="1748873692081" duration="594000" />
+      <workItem from="1748968758188" duration="644000" />
+      <workItem from="1749024367911" duration="7042000" />
+      <workItem from="1749278159538" duration="14976000" />
+      <workItem from="1749297705333" duration="6380000" />
+      <workItem from="1749327074990" duration="2000" />
+      <workItem from="1749395394518" duration="5175000" />
+      <workItem from="1749409579682" duration="519000" />
+      <workItem from="1749579427331" duration="3000" />
+      <workItem from="1749639242085" duration="595000" />
+      <workItem from="1749709098940" duration="1470000" />
+      <workItem from="1749713365206" duration="1000" />
+      <workItem from="1749744401345" duration="156000" />
+      <workItem from="1749808385244" duration="1304000" />
+      <workItem from="1749899072459" duration="3000" />
+      <workItem from="1749900685717" duration="9038000" />
+      <workItem from="1749910165976" duration="60000" />
+      <workItem from="1750243617719" duration="1259000" />
+    </task>
+    <task id="LOCAL-00001" summary="test webstorm">
+      <option name="closed" value="true" />
+      <created>1748459651520</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1748459651520</updated>
+    </task>
+    <task id="LOCAL-00002" summary="test webstorm">
+      <option name="closed" value="true" />
+      <created>1748459686275</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1748459686275</updated>
+    </task>
+    <task id="LOCAL-00003" summary="A script about &quot;User's personal card + friends list&quot; has been created.">
+      <option name="closed" value="true" />
+      <created>1748678029069</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1748678029069</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Removed .idea">
+      <option name="closed" value="true" />
+      <created>1748678107516</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1748678107516</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Created HW-11">
+      <option name="closed" value="true" />
+      <created>1748683304081</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1748683304081</updated>
+    </task>
+    <task id="LOCAL-00006" summary="renamed script.js">
+      <option name="closed" value="true" />
+      <created>1748683439178</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1748683439178</updated>
+    </task>
+    <task id="LOCAL-00007" summary="renamed script.js">
+      <option name="closed" value="true" />
+      <created>1748683488426</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1748683488426</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Completed hw-13">
+      <option name="closed" value="true" />
+      <created>1749025084447</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1749025084447</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Completed hw-14">
+      <option name="closed" value="true" />
+      <created>1749026302979</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1749026302979</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Completed hw-15">
+      <option name="closed" value="true" />
+      <created>1749031597097</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1749031597097</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Completed hw-16">
+      <option name="closed" value="true" />
+      <created>1749286150107</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1749286150107</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Completed hw-17">
+      <option name="closed" value="true" />
+      <created>1749299685902</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1749299685902</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Completed hw-18">
+      <option name="closed" value="true" />
+      <created>1749409809993</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1749409809993</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Completed hw-19">
+      <option name="closed" value="true" />
+      <created>1749709975307</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1749709975307</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Added &quot;use strict&quot;">
+      <option name="closed" value="true" />
+      <created>1749744541422</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1749744541422</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Completed hw-20">
+      <option name="closed" value="true" />
+      <created>1749903541279</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1749903541279</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Completed hw-21">
+      <option name="closed" value="true" />
+      <created>1749909800362</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1749909800362</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Completed hw-21 and edited readMe file">
+      <option name="closed" value="true" />
+      <created>1749909993526</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1749909993526</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test webstorm" />
+    <MESSAGE value="A script about &quot;User's personal card + friends list&quot; has been created." />
+    <MESSAGE value="Removed .idea" />
+    <MESSAGE value="Created HW-11" />
+    <MESSAGE value="renamed script.js" />
+    <MESSAGE value="Completed hw-13" />
+    <MESSAGE value="Completed hw-14" />
+    <MESSAGE value="Completed hw-15" />
+    <MESSAGE value="Completed hw-16" />
+    <MESSAGE value="Completed hw-17" />
+    <MESSAGE value="Completed hw-18" />
+    <MESSAGE value="Completed hw-19" />
+    <MESSAGE value="Added &quot;use strict&quot;" />
+    <MESSAGE value="Completed hw-20" />
+    <MESSAGE value="Completed hw-21" />
+    <MESSAGE value="Completed hw-21 and edited readMe file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed hw-21 and edited readMe file" />
+  </component>
+</project>
