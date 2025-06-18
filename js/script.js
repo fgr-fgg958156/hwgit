@@ -25,10 +25,8 @@ const positiveNumbers = (array) => {
             exampleArr.push(array[i]);
         }
     }
-
     return exampleArr.length === 0 ? null : exampleArr;
 }
-
 
 const arr = [1, 2, 3, -1, -2, -3];
 

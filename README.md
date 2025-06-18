@@ -13,4 +13,4 @@
 7. If the number is positive, then we add it to the previously created array using the push function (example exampleArr.push(currentPositiveNumber)).
 8. After executing the loop, we check the array that was filled with only positive values.
 9. If it is not empty, then we return this array.
-10. If it is empty, return null.
+10. If it is empty, return null
