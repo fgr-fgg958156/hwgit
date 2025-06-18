@@ -1,19 +1,16 @@
 # script about "PadString"
 
-### Wrote an implementation of the padString function that takes 4 arguments:
+ Given an array of numbers const arr = [1, 2, 3, -1, -2, -3];
 
-* string
-* a number that is the long string that we want to get as a result of the function
-* a symbol (a string with a length of 1 character) — which will be added to the string if necessary
-* a boolean parameter (true or false) that determines whether to add characters to the left or right (by default, to the right)
+## We need to write a function that will return a new array containing only positive numbers. To do this:
 
-When writing a function, it is imperative to check the arguments that we passed, and if there are no arguments, then return a string with an error from the function (return 'some error'). The error message should be different depending on the condition under which the check failed.
-The result of the function call should be displayed in the console after the function completes.
-
-### For example:
-
-* Calling padString('hello', 8, '*') will return the string hello***
-
-* And calling padString('hello', 6, '*', false) will return the string *hello
-
-* Calling padString('hello', 2) will return 'he' — if the number is smaller than the size of the input string, you need to truncate the string using the substr method
+1. Create a function with an arbitrary name.
+2. The function accepts an array as a parameter.
+3. In the body of the function, we create an empty array (example: const exampleArr = []).
+4. If the array passed as a parameter to the function is empty, then we return the corresponding message.
+5. We loop through the array passed as a parameter (we use a for loop).
+6. In the body of the loop, we check whether the current element is a positive or negative number (if).
+7. If the number is positive, then we add it to the previously created array using the push function (example exampleArr.push(currentPositiveNumber)).
+8. After executing the loop, we check the array that was filled with only positive values.
+9. If it is not empty, then we return this array.
+10. If it is empty, return null.

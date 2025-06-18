@@ -1,32 +1,35 @@
 "use strict";
 
-function padString(mainString, mainNumber, extraSymbol, sideBoolean = true){
-    if(mainString === undefined) return 'some error with "mainString", it is undefined';
-    if(typeof mainString !== 'string') return 'some error with "mainString", it is not a string';
-
-    if(mainNumber === undefined) return 'some error with "mainNumber", it is undefined';
-    if(typeof mainNumber !== 'number') return 'some error with "mainNumber", it is not a number';
-
-    if(typeof sideBoolean !== 'boolean') return 'some error with "sideBoolean", it is not a boolean';
-
-    let result = mainString;
-
-    if(result.length < mainNumber){
-        let difference = mainNumber - result.length;
-        let gaps = extraSymbol.repeat(difference);
-        result = sideBoolean ? result + gaps : gaps + result ;
-
-        if(extraSymbol.length > 1) return 'some error with "extraSymbol", it more than 1 symbols';
-        if(typeof extraSymbol !== 'string') return 'some error with "extraSymbol", it is not a string';
-    }
-    else if (result.length > mainNumber){
-        result = result.substr(0, mainNumber);
+const checkArray = (array) => {
+    if(!Array.isArray(array)) {
+        return "it is not array";
     }
 
-    return result;
+    for (let i = 0; i < array.length; i++) {
+        if(typeof array[i] !== 'number') {
+            return `Element at index "${i}" not a number`;
+        }
+    }
+    return true;
 }
 
-const text1 = padString('hello', 8, '*');
-const text2 = padString('hello', 6, '*', false);
-const text3 = padString('hello', 2);
-console.log(`task1 = ${text1}, task2 = ${text2}, task3 = ${text3}`);
+const positiveNumbers = (array) => {
+    const check = checkArray(array);
+    if(check !== true) return check;
+
+    if(array.length === 0) return "array is empty";
+
+    let exampleArr = [];
+    for (let i = 0; i < array.length; i++) {
+        if(array[i] > 0) {
+            exampleArr.push(array[i]);
+        }
+    }
+
+    return exampleArr.length === 0 ? null : exampleArr;
+}
+
+
+const arr = [1, 2, 3, -1, -2, -3];
+
+console.log(positiveNumbers(arr));
