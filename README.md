@@ -1,4 +1,4 @@
-# script about "PadString"
+# script about "V3 Features"
 
  Given an array of numbers const arr = [1, 2, 3, -1, -2, -3];
 
