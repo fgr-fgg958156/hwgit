@@ -1,124 +1,59 @@
 "use strict";
 
-const _array = [1, 2, 3, 3];
-const _string = 'Hello world, world!';
+let _array = [16,-37,54,-4,72,-56,47,4, -16,25,-37,46,4,-51,27,-63,4,-54,76,-4,12,-35,4,47];
 
-//indexOf
-const IndexOf = (array, value) => {
-    if(typeof array === "string") {
-        if(array.length < value.length) return -1;
-        if(typeof value !== "string") return -1;
+const operationArray = (array, mainNumber, firstCondition, secondCondition, text, isVisibleCount = false) =>{
+    let operation = mainNumber;
+    let count = 0;
 
-        for (let i = 0; i <= array.length - value.length; i++) {
-            let found = true;
-            for (let j = 0; j < value.length; j++) {
-                if(array[i + j] !== value[j]) {
-                    found = false;
-                    break;
-                }
-            }
-            if(found) return i;
+    for (let i = 0; i < array.length; i++) {
+        if(firstCondition(array[i])) {
+            operation = secondCondition(operation, array[i]);
+            if(isVisibleCount) count ++;
         }
     }
-    else if(Array.isArray(array)) {
-       for(let i = 0; i < array.length; i++) {
-           if(array[i] === value) {
-               return i;
-           }
-       }
-    }
-    return -1;
+    return isVisibleCount ? `${text} ${operation};\ncount ${count};` : `${text} ${operation};`;
 }
 
-console.log(IndexOf(_string, 'world'));
-console.log(IndexOf(_array, 3));
-
-//lastIndexOf
-const LastIndexOf = (array, value) => {
-    if(typeof array === "string") {
-        if(array.length < value.length) return -1;
-        if(typeof value !== "string") return -1;
-
-        for (let i = array.length - value.length; i >= 0; i--) {
-            let found = true;
-            for (let j = 0; j < value.length; j++) {
-                if(array[i + j] !== value[j]) {
-                    found = false;
-                    break;
-                }
-            }
-            if(found) return i;
+const extremumArray = (array, condition, text, removeExtra = false) => {
+    const extremum = condition(...array);
+    let index = array.indexOf(extremum);
+    if(removeExtra) {
+        for(let i = 0; i < array.length; i++) {
+            if(array[i] !== extremum) array[i] = 0;
         }
     }
-    else if(Array.isArray(array)) {
-        for(let i = array.length - 1 ; i >= 0 ; i--) {
-            if(array[i] === value) {
-                return i;
-            }
-        }
-    }
-    return -1;
+    return `${text} ${extremum};\nindex ${index};`;
 }
 
-console.log(LastIndexOf(_string, 'world'));
-console.log(LastIndexOf(_array, 3));
-
-//find
-const Find = (array, condition) => {
-    for(let i = 0; i < array.length; i++) {
+const numberArray = (array, condition, text) => {
+    let count = 0;
+    for (let i = 0; i < array.length; i++) {
         if(condition(array[i])) {
-            return array[i];
+            count ++;
         }
     }
-    return undefined;
+    return `${text} ${count}`;
 }
 
-console.log(Find(_array, number => number % 2 === 0));
-
-//findIndex
-const FindIndex = (array, condition) => {
-    for(let i = 0; i < array.length; i++) {
-        if(condition(array[i])) {
-            return i;
-        }
-    }
-    return -1;
-}
-
-console.log(FindIndex(_array, number => number % 2 === 0));
-
-//includes
-const Includes = (array, value) => {
-    for(let i = 0; i < array.length; i++) {
-        if(array[i] === value) {
-            return true;
-        }
-    }
-    return false;
-}
-
-console.log(Includes(_array, 3));
-
-//every
-const Every = (array, condition) => {
-    for(let i = 0; i < array.length; i++) {
-        if(!condition(array[i])) {
-            return false;
-        }
-    }
-    return true;
-}
-
-console.log(Every(_array, number => number > 1));
-
-//some
-const Some = (array, condition) => {
-    for(let i = 0; i < array.length; i++) {
-        if(condition(array[i])) {
-            return true;
-        }
-    }
-    return false;
-}
-
-console.log(Some(_array, number => number % 2 === 0));
+//task1
+console.log(operationArray(_array,0, num => num > 0, (op, num) => op + num, "Sum of positive numbers is", true));
+//task7
+console.log(operationArray(_array,0, num => num > 0 && num % 2 === 0, (op, num) => op + num, "Sum of even positive numbers is"));
+//task8
+console.log(operationArray(_array,0, num => num > 0 && num % 2 !== 0, (op, num) => op + num, "Sum of odd positive numbers is"));
+//task9
+console.log(operationArray(_array,1, num => num > 0, (op, num) => op * num, "Product of positive numbers is"));
+//task2
+console.log(extremumArray(_array, Math.min, "Min element is"));
+//task3
+console.log(extremumArray(_array, Math.max, "Max element is"));
+//task4
+console.log(numberArray(_array, num => num < 0, "Number of negative numbers is"));
+//task5
+console.log(numberArray(_array, num => num > 0 && num % 2 === 0, "Number of even positive numbers is"));
+//task6
+console.log(numberArray(_array, num => num > 0 && num % 2 !== 0, "Number of odd positive numbers is"));
+//task10
+console.log(extremumArray(_array, Math.max, "(remove extra numbers) Max element is", true));
+console.table(_array);
