@@ -1,46 +1,124 @@
 "use strict";
 
-const Shift = (array) => {
-    if(array.length === 0) return array;
+const _array = [1, 2, 3, 3];
+const _string = 'Hello world, world!';
 
-    let result = [];
-    const firstVariable = array[0];
+//indexOf
+const IndexOf = (array, value) => {
+    if(typeof array === "string") {
+        if(array.length < value.length) return -1;
+        if(typeof value !== "string") return -1;
 
-    for(let i = 1; i < array.length; i++){
-        result[result.length] = array[i];
+        for (let i = 0; i <= array.length - value.length; i++) {
+            let found = true;
+            for (let j = 0; j < value.length; j++) {
+                if(array[i + j] !== value[j]) {
+                    found = false;
+                    break;
+                }
+            }
+            if(found) return i;
+        }
     }
-
-    for(let i = 0; i < result.length; i++){
-        array[i] = result[i];
+    else if(Array.isArray(array)) {
+       for(let i = 0; i < array.length; i++) {
+           if(array[i] === value) {
+               return i;
+           }
+       }
     }
-    array.length = result.length;
-
-    return firstVariable;
+    return -1;
 }
 
-let array = ['1', 2, '3', 4, '5'];
-let variable = Shift(array);
+console.log(IndexOf(_string, 'world'));
+console.log(IndexOf(_array, 3));
 
-console.log(variable);
-console.table(array);
+//lastIndexOf
+const LastIndexOf = (array, value) => {
+    if(typeof array === "string") {
+        if(array.length < value.length) return -1;
+        if(typeof value !== "string") return -1;
 
-const Reverse = (array) => {
-    if(array.length === 0) return array;
-
-    let reverseArray = [];
-
-    for(let i = array.length - 1; i >= 0; i--){
-        reverseArray[reverseArray.length ] = array[i];
+        for (let i = array.length - value.length; i >= 0; i--) {
+            let found = true;
+            for (let j = 0; j < value.length; j++) {
+                if(array[i + j] !== value[j]) {
+                    found = false;
+                    break;
+                }
+            }
+            if(found) return i;
+        }
     }
-
-    for(let i = 0; i < reverseArray.length; i++){
-
-        array[i] = reverseArray[i];
+    else if(Array.isArray(array)) {
+        for(let i = array.length - 1 ; i >= 0 ; i--) {
+            if(array[i] === value) {
+                return i;
+            }
+        }
     }
-
-    return array;
+    return -1;
 }
 
-Reverse(array);
+console.log(LastIndexOf(_string, 'world'));
+console.log(LastIndexOf(_array, 3));
 
-console.table(array);
+//find
+const Find = (array, condition) => {
+    for(let i = 0; i < array.length; i++) {
+        if(condition(array[i])) {
+            return array[i];
+        }
+    }
+    return undefined;
+}
+
+console.log(Find(_array, number => number % 2 === 0));
+
+//findIndex
+const FindIndex = (array, condition) => {
+    for(let i = 0; i < array.length; i++) {
+        if(condition(array[i])) {
+            return i;
+        }
+    }
+    return -1;
+}
+
+console.log(FindIndex(_array, number => number % 2 === 0));
+
+//includes
+const Includes = (array, value) => {
+    for(let i = 0; i < array.length; i++) {
+        if(array[i] === value) {
+            return true;
+        }
+    }
+    return false;
+}
+
+console.log(Includes(_array, 3));
+
+//every
+const Every = (array, condition) => {
+    for(let i = 0; i < array.length; i++) {
+        if(!condition(array[i])) {
+            return false;
+        }
+    }
+    return true;
+}
+
+console.log(Every(_array, number => number > 1));
+
+//some
+const Some = (array, condition) => {
+    for(let i = 0; i < array.length; i++) {
+        if(condition(array[i])) {
+            return true;
+        }
+    }
+    return false;
+}
+
+console.log(Some(_array, number => number % 2 === 0));
