@@ -1,8 +1,5 @@
-# script about "Write several functions"
+# script about "Write functions"
 
-This task consists of four small tasks, for the implementation of each of them you can get 25 points:
-
-1. Given an array with elements of different types. Create a function that calculates the arithmetic mean of only the numeric elements of this array.
-2. Write a function doMath(x, znak, y), which receives 3 arguments: the numbers x and y, the string znak. The variable znak can contain: +, -, *, /, %, ^ (degree ). Display the result of the mathematical operation specified in the variable znak. Both numbers and the sign come from the user.
-3. Write a function to fill a two-dimensional array with user data. The length of the main array and internal arrays is specified by the user. The value of all elements of all arrays is specified by the user.
-4. Create a function that removes all characters from a string that we passed in the second argument. 'func(" hello world", ['l', 'd'])' will return "heo wor". The output string and characters to remove are specified by the user.
+1.Your function should work similarly to the array.shift method
+2.Your next function should work similarly to the array.reverse method
+Array methods are not allowed in the DZ
