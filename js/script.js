@@ -1,59 +1,58 @@
 "use strict";
 
-let _array = [16,-37,54,-4,72,-56,47,4, -16,25,-37,46,4,-51,27,-63,4,-54,76,-4,12,-35,4,47];
+const _function = () =>{
+    //Created a 'for' loop with 1 iteration
+    for(let i = 0; i < 1; i++){
+        var _varValue = i;// value var
+        let _letValue = i * 2;// value let
+        const _constValue = i * 3;// value const
 
-const operationArray = (array, mainNumber, firstCondition, secondCondition, text, isVisibleCount = false) =>{
-    let operation = mainNumber;
-    let count = 0;
-
-    for (let i = 0; i < array.length; i++) {
-        if(firstCondition(array[i])) {
-            operation = secondCondition(operation, array[i]);
-            if(isVisibleCount) count ++;
-        }
+        //announced in loop
+        console.log("*loop*");
+        console.log(`var in loop ${_varValue}`);
+        console.log(`let in loop ${_letValue}`);
+        console.log(`const in loop ${_constValue}`);
     }
-    return isVisibleCount ? `${text} ${operation};\ncount ${count};` : `${text} ${operation};`;
-}
 
-const extremumArray = (array, condition, text, removeExtra = false) => {
-    const extremum = condition(...array);
-    let index = array.indexOf(extremum);
-    if(removeExtra) {
-        for(let i = 0; i < array.length; i++) {
-            if(array[i] !== extremum) array[i] = 0;
-        }
+
+    //announced without loop
+    console.log("*without loop*");
+    console.log(_varValue);
+
+    try{
+        console.log(_letValue);
     }
-    return `${text} ${extremum};\nindex ${index};`;
-}
-
-const numberArray = (array, condition, text) => {
-    let count = 0;
-    for (let i = 0; i < array.length; i++) {
-        if(condition(array[i])) {
-            count ++;
-        }
+    catch(err){
+        console.log("_letValue:", err);
     }
-    return `${text} ${count}`;
-}
 
-//task1
-console.log(operationArray(_array,0, num => num > 0, (op, num) => op + num, "Sum of positive numbers is", true));
-//task7
-console.log(operationArray(_array,0, num => num > 0 && num % 2 === 0, (op, num) => op + num, "Sum of even positive numbers is"));
-//task8
-console.log(operationArray(_array,0, num => num > 0 && num % 2 !== 0, (op, num) => op + num, "Sum of odd positive numbers is"));
-//task9
-console.log(operationArray(_array,1, num => num > 0, (op, num) => op * num, "Product of positive numbers is"));
-//task2
-console.log(extremumArray(_array, Math.min, "Min element is"));
-//task3
-console.log(extremumArray(_array, Math.max, "Max element is"));
-//task4
-console.log(numberArray(_array, num => num < 0, "Number of negative numbers is"));
-//task5
-console.log(numberArray(_array, num => num > 0 && num % 2 === 0, "Number of even positive numbers is"));
-//task6
-console.log(numberArray(_array, num => num > 0 && num % 2 !== 0, "Number of odd positive numbers is"));
-//task10
-console.log(extremumArray(_array, Math.max, "(remove extra numbers) Max element is", true));
-console.table(_array);
+    try{
+        console.log(_constValue);
+    }
+    catch(err){
+        console.log("_constValue:", err);
+    }
+}
+_function();
+
+/*
+created function "_function"
+called a function
+
+created a loop
+added to loop 3 value (var, let, const)
+announced 3 value in loop
+ended loop
+
+announced 3 value without loop
+
+var give value because it is a "function scope" or "Функціональна область визначення"
+in hosting "var" is raised to the beginning of the function and "var" works anywhere in the function
+
+let give error "is not defined" because it is a "block scope" or "Блочна область визначення"
+in hosting "let" is in Temporal Dead Zone and "let" works only in the loop
+
+const give error "is not defined" because it is a "block scope" or "Блочна область визначення"
+in hosting "const" is in Temporal Dead Zone and "const" works only in the loop
+
+*/
