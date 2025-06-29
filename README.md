@@ -1,7 +1,7 @@
-# script about "Write your own implementation of the bind and apply functions"
+# script about "findValuesByKey"
 
-1. Write your own implementation of the apply function
+Write a function findValuesByKey(obj, targetKey) that:
 
-2. Write your own implementation of the bind function
+Takes an arbitrary nested object obj.
 
-3. When implementing the bind function, the use of the call and apply methods is blocked
+Returns an array of all values matching the key targetKey (the key can appear at any level of nesting, and multiple times).

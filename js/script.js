@@ -1,48 +1,35 @@
 'use strict';
 
-const user = {
-    firstName: 'Walter',
-    lastName: 'White',
-    age: 50,
-    job: 'teacher',
-    location: 'Albuquerque'
-}
+const data = {
+    id: 1,
+    name: "root",
+    meta: {
+        id: 2,
+        parent: {
+            id: 3,
+            name: "leaf",
+        },
+    },
+    array: [
+        { id: 4 },
+        { name: "node", children: [{ id: 5 }] },
+    ],
+};
 
-function userInfo(greetingMessage){
-    console.log(`${greetingMessage}
-    \nYour name is ${this.firstName} ${this.lastName}
-    \nYour age is ${this.age}
-    \nYour job is ${this.job}
-    \nYour location is ${this.location}`);
-}
+const findValuesByKey = (object, value, initialObj= []) => {
 
-//apply
-const _apply = (linkFunction, thisArg, argArray) =>{
-    thisArg.function = linkFunction;
-    const result = thisArg.function(...argArray);
-    delete thisArg.function;
-    return result;
-}
-
-_apply(userInfo, user, ['Welcome']);
-
-//call
-const _call = (linkFunction, thisArg, ...argList) =>{
-    thisArg.function = linkFunction;
-    const result = thisArg.function(...argList);
-    delete thisArg.function;
-    return result;
-}
-
-_call(userInfo, user, 'Welcome');
-
-//bind
-const _bind = (linkFunction, thisArg, ...argList) =>{
-    return function(...extraArgList){
-        thisArg.function = linkFunction;
-        return thisArg.function(...argList, ...extraArgList);
+    for (const obj in object) {
+        if(typeof object[obj] !== 'object') {
+            if(obj === value && object[obj] !== null){
+                initialObj.push(object[obj]);
+            }
+        }
+        else{
+            findValuesByKey(object[obj], value, initialObj);
+        }
     }
+
+    return initialObj;
 }
 
-const result = _bind(userInfo, user, 'Welcome');
-result("extra");
+console.table(findValuesByKey(data, 'id'));
