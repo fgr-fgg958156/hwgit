@@ -1,3 +1,7 @@
-# script about "User accounts"
+# script about "Toggle site theme"
 
-Given an array of objects. Output an array of phone numbers of users whose balance is more than 2000 dollars. And find the sum of all user balances
+There is a button with the text “Change theme.” When you click on it, the site should switch between light and dark themes (add/remove the dark-theme class to <body>).
+
+1. Find button
+2. Hang click event handler
+3. Add/remove dark-theme class from <body>

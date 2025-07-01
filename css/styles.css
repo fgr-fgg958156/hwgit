@@ -1,9 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap');
 
 body{
+    background-color: #faf8f8;
+}
+
+body.dark-theme{
     background-color: #161618;
 }
+
 h1{
-    color: #7b97aa;
+    color: #284b63;
     font-family: "Schibsted Grotesk", sans-serif;
+}
+
+button{
+    font-family: "Schibsted Grotesk", sans-serif;
+    font-size: 18px;
+    border: none;
+    padding: 5px 20px;
+    outline: none;
+    border-radius: 16px;
+    background-color: #284b63;
+    color: #faf8f8;
+}
+
+button:hover{
+    background-color: #102835;
+}
+
+button:active{
+    background-color: #3e6283;
 }
