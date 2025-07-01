@@ -1,21 +1,18 @@
 "use strict";
 
-const _buttonSwitchTheme = document.getElementById('toggle-theme');
+const _filter = document.getElementById('filter');
+const _items = document.getElementsByClassName('card');
 
-let _theme = false;
+const updateFilter = () =>{
+    itemsVisible(_filter.value, 'all', _items)
+};
 
-const updateTheme = () => {
-    if(_theme){
-        document.body.classList.add("dark-theme");
-    }
-    else{
-        document.body.classList.remove("dark-theme");
-    }
+const itemsVisible = (category, customWord, array) => {
+    Array.from(array).forEach(item => {
+        let data = item.getAttribute('data-category');
+        item.style.display = (data === category || category === customWord ? 'block' : 'none');
+    })
 }
 
-const switchTheme = () => {
-    _theme = !_theme;
-    updateTheme();
-}
-
-_buttonSwitchTheme.addEventListener('click', switchTheme);
+_filter.addEventListener('change', updateFilter);
+updateFilter();

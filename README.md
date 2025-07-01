@@ -1,7 +1,9 @@
-# script about "Toggle site theme"
+# script about "Filter cards by category"
 
-There is a button with the text “Change theme.” When you click on it, the site should switch between light and dark themes (add/remove the dark-theme class to <body>).
+There are several product "cards" with the data-category attribute (for example, "fruit", "vegetable"). There is a selector with filters. When the user selects a category, only the cards that match it are shown.
 
-1. Find button
-2. Hang click event handler
-3. Add/remove dark-theme class from <body>
+1. React to change in <select id="filter">
+    <option value="all">all</option>
+    <option value="fruit">fruits</option>
+    <option value="vegetable">vegetables</option></select>
+2. Iterate over .card and hide/show depending on data-category
