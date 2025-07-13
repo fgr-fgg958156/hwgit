@@ -22,6 +22,7 @@ if(createProductButton){
         }
         dataBase.setData(productObject);
         ClearForm();
+        window.location.href = 'product-table.html';
     });
 }
 if(clearFormButton){
@@ -32,13 +33,13 @@ if(clearFormButton){
 if(toTableButton){
     toTableButton.addEventListener('click', function(){
         window.location.href = 'product-table.html';
-        localStorage.removeItem('currentlyEditedKey');
+        localStorage.removeItem('selectedProductID');
     });
 }
 if(toFormButton){
     toFormButton.addEventListener('click', function(){
         window.location.href = 'create-product.html';
-        localStorage.removeItem('currentlyEditedKey');
+        localStorage.removeItem('selectedProductID');
     });
 }
 if(applyButton){
@@ -46,7 +47,7 @@ if(applyButton){
         if(!isValidInput()) return
         dataBase.setKey(currentKey.id, productNameInput.value, productDescriptionInput.value, productPriceInput.value);
         console.log(productNameInput.value);
-        localStorage.removeItem('currentlyEditedKey');
+        localStorage.removeItem('selectedProductID');
         window.location.href = 'product-table.html';
     });
 }
@@ -58,8 +59,8 @@ const ClearForm = () =>{
 }
 
 const FillValueInput = () =>{
-    if(JSON.parse(localStorage.getItem('currentlyEditedKey')) !== null && productNameInput){
-        currentKey = dataBase.getKey(JSON.parse(localStorage.getItem('currentlyEditedKey')));
+    if(JSON.parse(localStorage.getItem('selectedProductID')) !== null && productNameInput){
+        currentKey = dataBase.getKey(JSON.parse(localStorage.getItem('selectedProductID')));
         productNameInput.value = currentKey.name;
         productDescriptionInput.value = currentKey.description;
         productPriceInput.value = currentKey.price;

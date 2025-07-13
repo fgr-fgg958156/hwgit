@@ -7,10 +7,11 @@ function Update() {
     let allProducts = '';
     console.log(data);
 
-    for(let i = 0; i < data.length; i++){
+    for(let i = data.length-1; i >= 0; i--) {
         const card = `
         <div class="card display-flex align-items-center justify-content-space-around border-radius-10 margin-10" id="${data[i].id}">
             <div class="display-flex flex-direction-column">
+                <span class="font-size-18 margin-10 product-name"><b>Id:</b> ${data[i].id}</span>
                 <span class="font-size-18 margin-10 product-name"><b>Name:</b> ${data[i].name}</span>
                 <span class="font-size-18 margin-10 product-description"><b>Description:</b> ${data[i].description}</span>
                 <span class="font-size-18 margin-10 product-price"><b>Price:</b> ${data[i].price} ₴</span>
@@ -34,7 +35,7 @@ function Update() {
         editButton.forEach((item) => {
             item.addEventListener('click', () =>{
                 const id = Number(item.closest('[id]').id);
-                localStorage.setItem('currentlyEditedKey', JSON.stringify(id));
+                localStorage.setItem('selectedProductID', JSON.stringify(id));
                 window.location.href = 'product-edit.html';
             })
         })
