@@ -1,21 +1,11 @@
-# script about "Product creation"
+# script about "Constructor functions"
 
-You need to implement 3 pages ✔️
+You need to create a constructor for the entity "Student".
 
-Page - form for creating a product (Name, description, price) ✔️
-Page - Table of created products (id, name, price, delete button, edit button)  ✔️
-Product editing page - the same as creation, only when saving, the created product should be edited, NOT created
-Pages can have separate script files and be separated from each other ✔️
+A student has a first name, last name, year of birth - these are properties. There is an array with grades, which is also a property. And there is an opportunity to get the student's age and his average grade - these are methods.
 
-Data transfer between pages should be done via localStorage  ✔️
+All Students also have an array of the same length, with 25 elements in it, initially it is not filled, but with 25 elements. This is an array in which attendance is noted, every time we call the .present() method on the next empty place, true is written to the array, when we call .absent() - false is written. Provide any protection against the fact that there cannot be more than 25 records in the attendance array. The array is a property, present and absent are methods.
 
-In localStorage you will have 2 data items  ✔️
+The last method: .summary(), checks the average grade and average attendance (number of Visits/number of Classes), and if the average grade is greater than 90 and the average attendance is greater than 0.9, then the summary method returns the string "Well done!", if one of these values is less, then - "Good, but you can do better", if both are lower - "Radish!".
 
-1. Array of product objects  ✔️
-2. Field selectedProductID - where the id of the selected product for the edit product page will be stored.  ✔️
-
-On the product creation page, there should be a check of inputs for correctness of input, when clicking on the create button, the data should first be written to localStorage and only then redirect the user to the product list page ✔️
-
-On the product list page, display a list of products, the newest ones at the top. ✔️
-
-When clicking on the Edit button of a specific product in the product table, you need to write the product ID that was clicked on to localStorage in the selectedProductID field and then open the product editing page. ✔️
+Don't forget to create 2-3 instances (of specific students) after you write this constructor and show the use of these methods.
