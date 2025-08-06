@@ -1,12 +1,10 @@
-# script about "Class for working with history of transitions (HistoryTracker)"
+# script about "Navigation menu with active page highlighting"
 
-Goal: Practice the History API and storing routes.
+Goal: Combine location, DOM, classes, and history.
 
 Requirements:
-Create a HistoryTracker class that:
-Stores a list of visited URLs in an array.
-Has methods:
-push(url) — adds an entry via pushState and stores it in history.
-back() — goes to the previous page via history.back().
-Optional:
-Use the popstate event to log the history of navigation.
+Implement a navigation menu (HTML) with 3 links: /home, /about, /contact.
+Create a Navigation class that:
+Tracks window.location.pathname.
+Adds the CSS class "active" to the corresponding menu item.
+Responds to popstate and manually changes the URL on click (via pushState).

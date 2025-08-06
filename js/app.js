@@ -1,39 +1,42 @@
 'use strict';
-import HistoryTracker from "./HistoryTracker.js";
+import Navigation from "./Navigation.js";
 
-const historyTracker = new HistoryTracker();
+const mainPageLink = document.getElementById('home');
+const aboutPageLink = document.getElementById('about');
+const contactPageLink = document.getElementById('contact');
+const pageTitle = document.getElementById('title');
 
-const titleText = document.getElementById('title');
-function Update(){
-    if(history.state != null)
-        titleText.innerText = history.state.page;
+const arrayOfPages = [mainPageLink, aboutPageLink, contactPageLink]
+const newNavigation = new Navigation(arrayOfPages);
+
+// mainPageLink.addEventListener('click', e => {
+//     e.preventDefault();
+//     history.pushState({page: 'home'}, `title of page home`, 'home');
+// })
+eventClick(mainPageLink, 'home', 'home', 'home');
+eventClick(aboutPageLink, 'about', 'about', 'about');
+eventClick(contactPageLink, 'contact', 'contact', 'contact');
+
+function UpdateTitle(){
+    pageTitle.innerHTML = window.location.pathname.replace("/hwgit/",'');
 }
 
-const backButton = document.getElementById('back');
-backButton.addEventListener('click', function(){
-    historyTracker.back();
-})
-
-const goButton = document.getElementById('go');
-goButton.addEventListener('click', function(){
-    historyTracker.go();
-})
-
-const createButton = document.getElementById('create');
-createButton.addEventListener('click', function(){
-    historyTracker.push(`?page=${history.length}`);
-    Update();
-})
-
-window.addEventListener('popstate', function(event) {
-    if (event.state) {
-        console.log("Поточний стан:", event.state);
-        Update();
-        historyTracker.checkWhichPageIVisited();
-        console.log(historyTracker.getURLsArray());
-    } else {
-        console.log("Немає стану для цієї URL.");
+window.addEventListener('popstate', function(e){
+    if(e.state){
+        console.log("current state:", e.state);
+        newNavigation.CheckURL();
+        UpdateTitle();
+    }
+    else{
+        console.warn('this page has no state');
     }
 });
 
-
+function eventClick(pageLink, pageName, pageTitle, pageUrl){
+    pageLink.addEventListener('click', e => {
+        e.preventDefault();
+        history.pushState({page: pageName}, `title of page ${pageTitle}`, pageUrl);
+        newNavigation.CheckURL();
+        UpdateTitle();
+    })
+}
