@@ -3,3 +3,23 @@
 body{
     font-family: "Schibsted Grotesk", sans-serif;
 }
+
+button{
+    font-family: "Schibsted Grotesk", sans-serif;
+    font-size: 18px;
+    border: none;
+    padding: 5px 20px;
+    outline: none;
+    border-radius: 16px;
+    background-color: #284b63;
+    color: #faf8f8;
+    margin: 10px;
+}
+
+button:hover{
+    background-color: #102835;
+}
+
+button:active{
+    background-color: #3e6283;
+}
