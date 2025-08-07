@@ -1,10 +1,17 @@
-# script about "Navigation menu with active page highlighting"
+# script about "URL parser via class"
 
-Goal: Combine location, DOM, classes, and history.
+Goal: To gain a deeper understanding of window.location properties and parse a URL into parts.
 
 Requirements:
-Implement a navigation menu (HTML) with 3 links: /home, /about, /contact.
-Create a Navigation class that:
-Tracks window.location.pathname.
-Adds the CSS class "active" to the corresponding menu item.
-Responds to popstate and manually changes the URL on click (via pushState).
+Create a URLParser class with a constructor that accepts a full URL.
+Add getters:
+protocol → returns http: or https:
+hostname → returns the domain
+path → returns the path (/products/item)
+queryParams → returns an object with query parameters ({ search: "book", page: "2" })
+!!! USE of window.location or location IS PROHIBITED !!!
+Example:
+```
+const parser = new URLParser("https://example.com/products/item?search=book&page=2");
+console.log(parser.queryParams); // { search: "book", page: "2" }
+```
