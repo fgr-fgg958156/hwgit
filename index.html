@@ -2,14 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>hw-46</title>
+    <title>hw-47</title>
     <link rel="stylesheet" href="css/style.css">
-    <script type="module" src="js/URLParser.js" defer></script>
     <script type="module" src="js/app.js" defer></script>
+    <script type="module" src="js/Controller.js" defer></script>
+    <script type="module" src="js/Model.js" defer></script>
+    <script type="module" src="js/View.js" defer></script>
 </head>
 <body>
 <div id="container">
-    <h1>hw-46</h1>
-</div>
+    <h1>Welcome to hw-47!</h1>
+    <div id="count">Active: 0; Completed: 0;</div>
+    <nav>
+        <select id="filter">
+            <option value="All">All</option>
+            <option value="Active">Active</option>
+            <option value="Completed">Completed</option>
+        </select>
+        <div>
+            <input name="taskInput" type="text" id="taskInput" placeholder="New Task">
+            <button type="submit" id="add-new-task">Add</button>
+        </div>
+    </nav>
+        <ul id="task-board">
+<!--            <li class="card">-->
+<!--                <div class="title">🍎 Apple</div>-->
+<!--                <div class="buttons">-->
+<!--                    <button type="submit" class="done">Done</button>-->
+<!--                    <button type="submit" class="delete">Delete</button>-->
+<!--                </div>-->
+<!--            </li>-->
+        </ul>
+    </div>
 </body>
 </html>
