@@ -1,24 +1,17 @@
-# hw-47 about "interactive task list"
-```
-Make an interactive to-do list with the following conditions:
+# hw-49 about "Simulating events via setTimeout with subscription (pub/sub)"
 
-There is an input field and an "Add" button on the page.
+TASK: Simulating events via ```setTimeout``` with subscription (```pub/sub```) — without Promises and async/await
 
-Each new list item is rendered in the DOM as a <li> with text and buttons:
+Goal: to implement the simplest event bus (Event Bus) in the browser, which can subscribe to events, unsubscribe and emit events asynchronously via ```setTimeout```.
 
-"Done" — changes the state of the item (strikes through the text + adds the "completed" class).
+## Restrictions:
 
-"Delete" — removes the item from the list.
+* Browser JavaScript only.
+* Prohibited: Promises, ```async/await```, third-party libraries.
+* Allowed: ```setTimeout```, DOM events for manual inspection.
+* 
+## Interface to be implemented:
 
-Add a counter that shows the number of completed and uncompleted tasks.
-
-Implement task filtering:
-
-"All" — shows all
-
-"Active" — only uncompleted ones
-
-"Completed" — only completed ones
-
-Minimize rerenders: when changing the state of one task, the entire <ul> should not be rerendered, but only a specific <li>.
-```
+* ```on(topic: string, handler: (payload:any) => void): () => void``` — subscription, returns an unsubscribe function.
+* ```emit(topic: string, payload?: any, delay = 0): void``` — asynchronous emission via setTimeout with a specified delay.
+* ```off(topic: string, handler: Function): void``` — unsubscribe.
