@@ -1,4 +1,6 @@
-# hw-50 about "Fake api"
+# hw-50 about "Async await"
+
+## Rewrite the HW 50
 
 You have a function ```fetchUserData(userId)``` that returns a promise with user data (emulating an API request).
 
