@@ -1,76 +1,26 @@
+import logo from './logo.svg';
 import './App.css';
 import {useState} from "react";
+import Header from "./components/Header";
+import Sidebar from "./components/SideBar";
+import Content from "./components/Content";
 
 function App() {
-  const [emojis, setEmoji] = useState({
-    "good": {
-      name: "🙂",
-      count: 0
-    },
-    "okay": {
-      name: "😑",
-      count: 0
-    },
-    "bad": {
-      name: "☹️",
-      count: 0
-    }
-  });
-  const [winer, setWiner] = useState("❓")
-
-  function getWiner(obj){
-    const emojisToArray = Object.values(obj);
-    let maxNum = -1;
-    let winerName = "";
-
-    for(const e of emojisToArray) {
-        if(e.count > maxNum){
-          maxNum = e.count;
-          winerName = e.name;
-        }
+    const headerObject = {
+        "Home" : "#",
+        "About" : "#",
+        "Contact" : "#"
     }
 
-    setWiner(winerName)
-  }
-  return (
-    <div className="App">
-      <header className="App-header">
-        <MakeListOfEmoji obj = {emojis} state={setEmoji}/>
-        <Button onClick={() => {getWiner(emojis)}} name = "Show Results" />
-        <p> {winer} </p>
-      </header>
-    </div>
-  );
-}
-
-function Button({onClick, name}){
-  return (
-      <button onClick={onClick}>{name}</button>
-  )
-}
-
-function Emoji({onClick, name, count}){
-  return (
-      <li onClick={onClick}>{name} {count}</li>
-  )
-}
-
-function MakeListOfEmoji({obj, state}){
-  return (
-      <ul>
-        {
-          Object.entries(obj).slice(0, obj.length).map(([key, value]) => (
-            <Emoji
-              onClick={()=>{
-                state(state => ({...state, [key]: {...state[key], count: state[key].count + 1}}))
-              }}
-              name={value.name}
-              count={value.count}
-            />
-          ))
-        }
-      </ul>
-  )
+    return (
+        <div className="App">
+            <header className="App-header">
+                <Header title={"HW-57"} titleLink={"#"} links={headerObject}/>
+                <Sidebar title={"sidebar"} links={headerObject}/>
+                <Content title={"Content"} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."}/>
+            </header>
+        </div>
+    );
 }
 
 export default App;
