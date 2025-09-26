@@ -1,39 +1,31 @@
 import React from "react";
-import InputDisplay from "./input/InputDisplay";
-import CardDisplay from "./card/CardDisplay";
-
-const cards = [
-    {id: 0, info: "aaaa", isDone: false}
-]
+import FormControls from "./form/FormControls";
+import UserCard from "./card/UserCard";
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 const InputSystem = () => {
-    const [cardsInner, setCard] = React.useState(cards);
+    const [users, setUsers] = React.useState([]);
 
-    const statusChanger = (id) => {
-        setCard(prevState => prevState.map(card => card.id === id ? {...card, isDone: !card.isDone} : card));
-    }
-
-    const renderCards =()=>{
-        return cardsInner.map(card => (
-            <li key={card.id}><CardDisplay info={card.info} isDone={card.isDone} onClick={() => {statusChanger(card.id)}}/></li>
+    const renderListOfUsers = (usersList) => {
+        return usersList.map((user) => (
+            <UserCard key={user.id} user={user}/>
         ))
     }
 
-    const addCard = (value) => {
-        setCard((prevState) => [
-            ...prevState,
-            {id:Date.now(), info: value, isDone: false}
-        ])
+    const addUser = (user) => {
+        setUsers(prevState => [...prevState, {...user, id: users.length}]);
     }
 
     return(
-        <>
-            <InputDisplay onClick={addCard}/>
-            <ul>
-                {renderCards()}
-            </ul>
-        </>
-    )
+        <Container>
+            <Row>
+                <Col><FormControls onClick={addUser}/></Col>
+                <Col>{renderListOfUsers(users)}</Col>
+            </Row>
+        </Container>
+    );
 }
 
 export default InputSystem;
