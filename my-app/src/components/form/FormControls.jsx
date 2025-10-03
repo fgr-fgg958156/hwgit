@@ -11,17 +11,18 @@ function FormControls({onClick}) {
     }
 
     const handleSubmit = () => {
-        if(!isValidForm) return;
+        if(!isValidForm()) return;
         onClick(value);
         setValue(keys);
     }
 
     const textValidation = (key) =>{
-        return typeof key === "string" && key !== "";
+        return typeof key === "string" && key.trim() !== "";
     }
 
     const ageValidation = (key) =>{
-        return !isNaN(Number(key)) && key >= 0
+        if(key === "" || key === undefined || key === null) return false;
+        return Number.isInteger(Number(key)) && key >= 0
     }
 
     const imageValidation = (file) =>{
