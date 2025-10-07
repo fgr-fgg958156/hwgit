@@ -1,25 +1,17 @@
-# script about "Creating users"
+# script about "Timer with life cycle control"
 
-Make a form that creates “user cards” with values ​​from inputs. After submitting, the new user appears in the list to the right of the form. If any field is empty, the submission is prohibited.
+Create a Timer class component that:
+Displays the number of seconds that have passed since the component was mounted.
+Has Start, Stop, and Reset buttons.
+Use lifecycle methods:
+componentDidMount – to start an interval that increments the counter every second.
+componentDidUpdate – to print the message "Updated: <value>" to the console when the number of seconds changes.
+componentWillUnmount – to clear the interval when the component is removed.
+Add an Unmount Timer button that completely removes the component from the DOM (via conditional rendering in the parent component).
+Additionally:
 
-Form fields
+Implement saving the timer state in LocalStorage (so that the time is restored when the page is reloaded).
+Do some styling via CSS (for example, when the timer is stopped, the numbers turn red).
+Do your homework using class and functional components.
 
-First name (firstName, text) — required
-
-Last name (lastName, text) — required
-
-Age (age, number, non-negative integers) — required
-
-Photo (photo, input type="file", only one image) — required
-
-Functional requirements
-
-Form on the left, list of users on the right (two columns)
-Controlled inputs via useState
-Validation: do not allow submission if any field is empty; for age — number ≥ 0
-Display photo on card
-Use
-
-https://react-bootstrap.netlify.app/
-https://react-bootstrap.netlify.app/docs/components/cards
-https://react-bootstrap.netlify.app/docs/forms/form-control
+That is, there should be 2 versions of the solution: class and functional

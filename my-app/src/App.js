@@ -1,5 +1,4 @@
-
-import InputSystem from "./components/InputSystem";
+import InputSystem from "./components/FormDisplay";
 
 function App() {
     return (
