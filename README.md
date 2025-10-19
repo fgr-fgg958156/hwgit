@@ -1,17 +1,35 @@
-# script about "Timer with life cycle control"
+# script about "Weather Dashboard 🌤️"
 
-Create a Timer class component that:
-Displays the number of seconds that have passed since the component was mounted.
-Has Start, Stop, and Reset buttons.
-Use lifecycle methods:
-componentDidMount – to start an interval that increments the counter every second.
-componentDidUpdate – to print the message "Updated: <value>" to the console when the number of seconds changes.
-componentWillUnmount – to clear the interval when the component is removed.
-Add an Unmount Timer button that completely removes the component from the DOM (via conditional rendering in the parent component).
-Additionally:
+Goal: Create a small application that shows the weather for the entered city, with the ability to add the city to “favorites”.
 
-Implement saving the timer state in LocalStorage (so that the time is restored when the page is reloaded).
-Do some styling via CSS (for example, when the timer is stopped, the numbers turn red).
-Do your homework using class and functional components.
+Main functionality
+City search
+Input for entering the city name.
+After clicking the “Search” button — the weather is loaded via the API.
+If the city is not found — show an error message.
+Weather display
+City name, country.
+Current temperature, wind, weather description.
+Forecast for several days (min/max temperature).
+Favorites
+Button “Add to favorites” / “Delete”.
+Favorite cities are stored in localStorage.
+You can quickly click on the selected city to update the weather.
+API (without key)
+1. Geocoding (city search): https://geocoding-api.open-meteo.com/v1/search?name={CITY}&count=1&language=uk
 
-That is, there should be 2 versions of the solution: class and functional
+2. Weather: https://api.open-meteo.com/v1/forecast?latitude={LAT}&longitude={LON}&current_weather=true&daily=temperature_2m_max,temperature_2m_min&timezone=auto
+
+Components
+<App /> — main component
+<SearchBar /> — input and search button
+<WeatherCard /> — shows weather for current city
+<FavoritesList /> — list of favorite cities
+Use
+React Hooks: useState, useEffect
+Working with API: fetch
+Saving in localStorage
+Conditional rendering (Loading / Error / Empty)
+Additionally (optional)
+Add custom hook useWeather.
+Make a background that changes depending on the weather (sunny, rainy, snowy).

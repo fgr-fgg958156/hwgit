@@ -4,19 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e28b6d30-6362-4fb3-9dd8-5ee5dd81310e" name="Changes" comment="completed hw-59">
-      <change afterPath="$PROJECT_DIR$/my-app/src/components/Config.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/components/FormDisplay.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/components/Timers/Timer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/components/Timers/TimerClass.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/components/Timers/TimerDisplayCard/CardDisplay.jsx" afterDir="false" />
+    <list default="true" id="e28b6d30-6362-4fb3-9dd8-5ee5dd81310e" name="Changes" comment="completed hw-60">
+      <change afterPath="$PROJECT_DIR$/my-app/src/components/Input.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/components/ListFavoriteItem.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/components/WeatherBackground.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/components/config/ConfigValue.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/pages/Main.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/view/FavoritesList.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/view/SearchBar.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/view/WeatherCard.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-app/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/components/InputSystem.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/components/card/UserCard.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/components/form/FormControls.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/components/keyConfig.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/components/Config.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/components/FormDisplay.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/components/Timers/Timer.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/components/Timers/TimerClass.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/components/Timers/TimerDisplayCard/CardDisplay.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +41,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="hw-59" />
+        <entry key="$PROJECT_DIR$" value="hw-60" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -53,6 +58,9 @@
     &quot;accountId&quot;: &quot;b1e68965-562b-4b68-b1d2-5c50167f1727&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -70,7 +78,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;hw-60&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;hw-61&quot;,
     &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -151,7 +159,11 @@
       <workItem from="1758791625444" duration="10214000" />
       <workItem from="1758878708338" duration="9822000" />
       <workItem from="1759494340582" duration="12579000" />
-      <workItem from="1759843112335" duration="8960000" />
+      <workItem from="1759843112335" duration="9580000" />
+      <workItem from="1760468029552" duration="2445000" />
+      <workItem from="1760625903655" duration="152000" />
+      <workItem from="1760770945422" duration="2177000" />
+      <workItem from="1760856085742" duration="24945000" />
     </task>
     <task id="LOCAL-00001" summary="created new branch hw-35">
       <option name="closed" value="true" />
@@ -417,7 +429,15 @@
       <option name="project" value="LOCAL" />
       <updated>1759495478223</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="completed hw-60">
+      <option name="closed" value="true" />
+      <created>1759866332902</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1759866332903</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -456,6 +476,7 @@
     <MESSAGE value="completed hw-57" />
     <MESSAGE value="completed hw-58" />
     <MESSAGE value="completed hw-59" />
-    <option name="LAST_COMMIT_MESSAGE" value="completed hw-59" />
+    <MESSAGE value="completed hw-60" />
+    <option name="LAST_COMMIT_MESSAGE" value="completed hw-60" />
   </component>
 </project>
