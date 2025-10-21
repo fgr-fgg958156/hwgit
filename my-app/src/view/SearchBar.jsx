@@ -10,6 +10,7 @@ function SearchBar({weatherState, setIsOpened}) {
     const search = async ()=>{
         setWeather(null);
         const newData = await searchData(city)
+
         setWeather(newData);
         localStorage.setItem(currWeatherDataName, JSON.stringify({...newData, isOpened: false}));
         weatherState(newData);

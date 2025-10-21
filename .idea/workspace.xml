@@ -4,24 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e28b6d30-6362-4fb3-9dd8-5ee5dd81310e" name="Changes" comment="completed hw-60">
-      <change afterPath="$PROJECT_DIR$/my-app/src/components/Input.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/components/ListFavoriteItem.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/components/WeatherBackground.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/components/config/ConfigValue.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/pages/Main.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/view/FavoritesList.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/view/SearchBar.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/view/WeatherCard.jsx" afterDir="false" />
+    <list default="true" id="e28b6d30-6362-4fb3-9dd8-5ee5dd81310e" name="Changes" comment="completed hw-61">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/components/Config.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/components/FormDisplay.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/components/Timers/Timer.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/components/Timers/TimerClass.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/components/Timers/TimerDisplayCard/CardDisplay.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/components/config/ConfigValue.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/components/config/ConfigValue.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/view/SearchBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/view/SearchBar.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,7 +149,8 @@
       <workItem from="1760468029552" duration="2445000" />
       <workItem from="1760625903655" duration="152000" />
       <workItem from="1760770945422" duration="2177000" />
-      <workItem from="1760856085742" duration="24945000" />
+      <workItem from="1760856085742" duration="25090000" />
+      <workItem from="1761053594324" duration="1755000" />
     </task>
     <task id="LOCAL-00001" summary="created new branch hw-35">
       <option name="closed" value="true" />
@@ -437,7 +424,15 @@
       <option name="project" value="LOCAL" />
       <updated>1759866332903</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="completed hw-61">
+      <option name="closed" value="true" />
+      <created>1760882684614</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1760882684614</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -477,6 +472,7 @@
     <MESSAGE value="completed hw-58" />
     <MESSAGE value="completed hw-59" />
     <MESSAGE value="completed hw-60" />
-    <option name="LAST_COMMIT_MESSAGE" value="completed hw-60" />
+    <MESSAGE value="completed hw-61" />
+    <option name="LAST_COMMIT_MESSAGE" value="completed hw-61" />
   </component>
 </project>

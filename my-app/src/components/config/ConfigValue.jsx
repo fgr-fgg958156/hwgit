@@ -19,7 +19,8 @@ export const weatherCodes = {
     82: { color: "#7777cd", emoji: "⛈️" },
     95: { color: "#b581b5", emoji: "🌩️" },
     96: { color: "#955b95", emoji: "⛈️" },
-    99: { color: "#895da6", emoji: "🌩️" }
+    99: { color: "#895da6", emoji: "🌩️" },
+    100:{ color: "#d15050", emoji: "⁉️" }
 };
 
 export const basicData ={
@@ -34,6 +35,13 @@ export const basicData ={
     weatherCode: 0,
     tomorrowMaxTemp: 0,
     tomorrowMinTemp: 0
+};
+
+export const errorData ={
+    ...basicData,
+    name: "city not found",
+    country: "country not found",
+    weatherCode: 100,
 };
 
 export const createNewDataObject = (data) => {
@@ -62,9 +70,9 @@ export const searchData = async (city) => {
     try {
         const geoRes = await fetch(`https://geocoding-api.open-meteo.com/v1/search?name=${city}&count=1&language=uk`);
         const geoData = await geoRes.json();
-        if(geoData.results.length === 0 || !geoData.results){
-            alert("wrong result");
-            return(basicData)
+        if(!geoData.results || geoData.results.length === 0){
+            alert("city not found");
+            return errorData;
         }
 
         const {latitude, longitude, name, country} = geoData.results[0];
@@ -89,6 +97,6 @@ export const searchData = async (city) => {
     }
     catch(err){
         alert(err);
-        return(basicData);
+        return basicData;
     }
 }
