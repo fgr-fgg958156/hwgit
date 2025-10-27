@@ -1,35 +1,30 @@
-# script about "Weather Dashboard 🌤️"
+# script about "Advanced Todo List with filters and task detailing"
 
-Goal: Create a small application that shows the weather for the entered city, with the ability to add the city to “favorites”.
+Create a Todo Manager application that has:
 
-Main functionality
-City search
-Input for entering the city name.
-After clicking the “Search” button — the weather is loaded via the API.
-If the city is not found — show an error message.
-Weather display
-City name, country.
-Current temperature, wind, weather description.
-Forecast for several days (min/max temperature).
-Favorites
-Button “Add to favorites” / “Delete”.
-Favorite cities are stored in localStorage.
-You can quickly click on the selected city to update the weather.
-API (without key)
-1. Geocoding (city search): https://geocoding-api.open-meteo.com/v1/search?name={CITY}&count=1&language=uk
-
-2. Weather: https://api.open-meteo.com/v1/forecast?latitude={LAT}&longitude={LON}&current_weather=true&daily=temperature_2m_max,temperature_2m_min&timezone=auto
-
-Components
-<App /> — main component
-<SearchBar /> — input and search button
-<WeatherCard /> — shows weather for current city
-<FavoritesList /> — list of favorite cities
-Use
-React Hooks: useState, useEffect
-Working with API: fetch
-Saving in localStorage
-Conditional rendering (Loading / Error / Empty)
-Additionally (optional)
-Add custom hook useWeather.
-Make a background that changes depending on the weather (sunny, rainy, snowy).
+a page with a list of tasks;
+a page with details of the selected task;
+an "About" page;
+saving data in localStorage.
+Functionality
+1. Home page (/)
+   Displays a list of tasks.
+   There is a form for adding a new task (input + “Add” button).
+   Each task has:
+   id
+   title
+   description
+   status → "active" | "completed"
+   createdAt
+   User actions:
+   ✅ Mark as completed / not completed
+   🗑️ Delete task
+   🔍 Go to the task details page (/task/:id)
+2. Task details (/task/:id)
+   Shows full information about the task:
+   title
+   description
+   creation date
+   status
+   There is a “Back to list” button.
+   It is possible to **edit
