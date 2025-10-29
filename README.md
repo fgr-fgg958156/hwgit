@@ -1,30 +1,34 @@
-# script about "Advanced Todo List with filters and task detailing"
+# script about "Add post edit"
 
-Create a Todo Manager application that has:
+Based on the files from the lesson, you need to add some editing to the post.
 
-a page with a list of tasks;
-a page with details of the selected task;
-an "About" page;
-saving data in localStorage.
-Functionality
-1. Home page (/)
-   Displays a list of tasks.
-   There is a form for adding a new task (input + “Add” button).
-   Each task has:
-   id
-   title
-   description
-   status → "active" | "completed"
-   createdAt
-   User actions:
-   ✅ Mark as completed / not completed
-   🗑️ Delete task
-   🔍 Go to the task details page (/task/:id)
-2. Task details (/task/:id)
-   Shows full information about the task:
-   title
-   description
-   creation date
-   status
-   There is a “Back to list” button.
-   It is possible to **edit
+There should be a form like on the Create Post page
+
+Going to it should be when you click on the Edit button in the table
+
+After going to the edit page, you need to load the post data, as is done on the View page
+
+After that, you need to substitute the loaded data into the form fields and allow editing
+
+When the user submits the form, you need to send a put request to the server
+
+Copy code
+fetch('https://jsonplaceholder.typicode.com/posts/1', {
+method: 'PUT',
+body: JSON.stringify({
+id: 1,
+title: 'foo',
+body: 'bar',
+userId: 1,
+}),
+headers: {
+'Content-type': 'application/json; charset=UTF-8',
+},
+})
+.then((response) => response.json())
+.then((json) => console.log(json));
+Be sure to include the body of the request, it should be like in the example with the post request
+
+Further work flow after the request is the same as on the Create Post page
+
+The doc on the ari is here https://jsonplaceholder.typicode.com/guide/

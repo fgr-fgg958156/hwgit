@@ -4,46 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e28b6d30-6362-4fb3-9dd8-5ee5dd81310e" name="Changes" comment="added message &quot;city not found&quot;">
-      <change afterPath="$PROJECT_DIR$/my-react-router-demo/src/Additionally/AppConfig.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-router-demo/src/components/BaseForm.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-router-demo/src/components/NavigationBar.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-router-demo/src/components/TodoCard.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-router-demo/src/components/TodoForm.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-router-demo/src/components/TodoList.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-router-demo/src/pages/About.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-router-demo/src/pages/Home.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-router-demo/src/pages/TaskDetails.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-router-demo/src/router/AppRouter.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-router-demo/src/templates/MainLayout.jsx" afterDir="false" />
+    <list default="true" id="e28b6d30-6362-4fb3-9dd8-5ee5dd81310e" name="Changes" comment="completed hw-62">
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/components/Input.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/components/ListFavoriteItem.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/components/WeatherBackground.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/components/config/ConfigValue.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/pages/Main.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/reportWebVitals.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/setupTests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/view/FavoritesList.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/view/SearchBar.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/view/WeatherCard.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-react-router-demo/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-react-router-demo/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-react-router-demo/eslint.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-react-router-demo/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-react-router-demo/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-react-router-demo/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-react-router-demo/public/vite.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-react-router-demo/src/Additionally/AppConfig.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-react-router-demo/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-react-router-demo/src/App.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-react-router-demo/src/components/BaseForm.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-react-router-demo/src/components/NavigationBar.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-react-router-demo/src/components/TodoCard.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-react-router-demo/src/components/TodoForm.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-react-router-demo/src/components/TodoList.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-react-router-demo/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-react-router-demo/src/main.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-react-router-demo/src/pages/About.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-react-router-demo/src/pages/Home.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-react-router-demo/src/pages/TaskDetails.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-react-router-demo/src/router/AppRouter.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-react-router-demo/src/templates/MainLayout.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-react-router-demo/vite.config.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +51,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="hw-61" />
+        <entry key="$PROJECT_DIR$" value="hw-62" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -100,7 +88,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;hw-62&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;hw-63&quot;,
     &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -115,9 +103,9 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\fgg95\WebstormProjects\hwgit" />
       <recent name="C:\Users\fgg95\WebstormProjects\hwgit\my-app\src\components\Timers" />
       <recent name="C:\Users\fgg95\WebstormProjects\hwgit\my-app\src\components" />
-      <recent name="C:\Users\fgg95\WebstormProjects\hwgit" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -192,7 +180,8 @@
       <workItem from="1761419474531" duration="681000" />
       <workItem from="1761420177255" duration="896000" />
       <workItem from="1761498125819" duration="882000" />
-      <workItem from="1761570767097" duration="17007000" />
+      <workItem from="1761570767097" duration="18366000" />
+      <workItem from="1761726748391" duration="5230000" />
     </task>
     <task id="LOCAL-00001" summary="created new branch hw-35">
       <option name="closed" value="true" />
@@ -482,7 +471,23 @@
       <option name="project" value="LOCAL" />
       <updated>1761060735520</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="completed hw-62">
+      <option name="closed" value="true" />
+      <created>1761594498267</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1761594498267</updated>
+    </task>
+    <task id="LOCAL-00038" summary="completed hw-62">
+      <option name="closed" value="true" />
+      <created>1761594552376</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1761594552376</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -524,6 +529,7 @@
     <MESSAGE value="completed hw-60" />
     <MESSAGE value="completed hw-61" />
     <MESSAGE value="added message &quot;city not found&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="added message &quot;city not found&quot;" />
+    <MESSAGE value="completed hw-62" />
+    <option name="LAST_COMMIT_MESSAGE" value="completed hw-62" />
   </component>
 </project>
