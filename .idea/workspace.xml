@@ -4,30 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e28b6d30-6362-4fb3-9dd8-5ee5dd81310e" name="Changes" comment="completed hw-63">
-      <change afterPath="$PROJECT_DIR$/react-router/src/components/CustomProductCard/CustomCard.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/react-router/src/components/CustomProductCard/CustomSmallCard.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/react-router/src/components/FormComponents/CustomInput.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/react-router/src/pages/Cart.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/react-router/src/pages/Catalog.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/react-router/src/pages/OrderForm.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/react-router/src/pages/ViewItem.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-router/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/react-router/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-router/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/react-router/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-router/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/react-router/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-router/src/components/CustomTable/CustomTable.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-router/src/components/CustomTable/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-router/src/components/NavigationBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/react-router/src/components/NavigationBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-router/src/pages/CreatePost.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-router/src/pages/EditPost.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-router/src/pages/PostsList.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-router/src/pages/ViewPost.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-router/src/router/AppRouter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/react-router/src/router/AppRouter.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-router/src/router/routerPaths.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-router/src/router/routerPaths.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-router/src/utils/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-router/src/utils/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-router/src/utils/nameNormalizer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-router/src/utils/users.js" beforeDir="false" />
+    <list default="true" id="e28b6d30-6362-4fb3-9dd8-5ee5dd81310e" name="Changes" comment="completed hw-64">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-router/README.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +159,7 @@
       <workItem from="1761726748391" duration="5299000" />
       <workItem from="1762613143934" duration="595000" />
       <workItem from="1763195318931" duration="22281000" />
-      <workItem from="1763808779159" duration="11962000" />
+      <workItem from="1763808779159" duration="12048000" />
     </task>
     <task id="LOCAL-00001" summary="created new branch hw-35">
       <option name="closed" value="true" />
@@ -494,7 +473,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761736140932</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="completed hw-64">
+      <option name="closed" value="true" />
+      <created>1763838138657</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1763838138657</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -512,7 +499,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="created new branch hw-35" />
     <MESSAGE value="created new branch hw-36" />
     <MESSAGE value="completed hw-38" />
     <MESSAGE value="completed hw-39" />
@@ -537,6 +523,7 @@
     <MESSAGE value="added message &quot;city not found&quot;" />
     <MESSAGE value="completed hw-62" />
     <MESSAGE value="completed hw-63" />
-    <option name="LAST_COMMIT_MESSAGE" value="completed hw-63" />
+    <MESSAGE value="completed hw-64" />
+    <option name="LAST_COMMIT_MESSAGE" value="completed hw-64" />
   </component>
 </project>

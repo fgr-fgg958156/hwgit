@@ -1,34 +1,41 @@
-# script about "Add post edit"
+#  Final Project
+Some of the functional requirements can be skipped, but if you want to work on all the skills well, I recommend doing them fully.
 
-Based on the files from the lesson, you need to add some editing to the post.
+API
 
-There should be a form like on the Create Post page
+https://fakestoreapi.com/docs
+https://novapost.com/en-ro/for-business/api/
+https://api.novapost.pl/developers/index.html#overview
+https://developers.novaposhta.ua/
+https://www.postman.com/
+Develop a basic version of an online store that includes a catalog page, a product page, a cart, and checkout.
 
-Going to it should be when you click on the Edit button in the table
+Functional requirements
+Catalog page
+Displaying a list of products.
+Ability to filter products by category, price.
+Search for products by keywords.
+Pagination for a large number of products.
+Product page
+Displaying detailed information about the product: name, description, price, image, availability in stock.
+Ability to add a product to the cart.
+Ability to select the quantity of products to add to the cart.
+Ability to view similar products.
+Cart
+Display of added products with the ability to edit the quantity or delete products.
+Display of the total cost of the order.
+Ability to proceed to checkout.
+Checkout
+Form for entering personal data (name, surname, contact phone number, email).
+Form for entering the delivery address.
+Choice of delivery method.
+Choice of payment method.
+Sending a message about successful order placement.
+Non-functional requirements
+User interface
+Intuitive and user-friendly interface.
+Responsive design for correct display on different devices (mobile phones, tablets, desktops).
+Stack
 
-After going to the edit page, you need to load the post data, as is done on the View page
-
-After that, you need to substitute the loaded data into the form fields and allow editing
-
-When the user submits the form, you need to send a put request to the server
-
-Copy code
-fetch('https://jsonplaceholder.typicode.com/posts/1', {
-method: 'PUT',
-body: JSON.stringify({
-id: 1,
-title: 'foo',
-body: 'bar',
-userId: 1,
-}),
-headers: {
-'Content-type': 'application/json; charset=UTF-8',
-},
-})
-.then((response) => response.json())
-.then((json) => console.log(json));
-Be sure to include the body of the request, it should be like in the example with the post request
-
-Further work flow after the request is the same as on the Create Post page
-
-The doc on the ari is here https://jsonplaceholder.typicode.com/guide/
+HTML, CSS, SCSS, npm, JS
+React, Redux, RTKQuery, MUI, React Router, PropTypes, lodash, classnames
