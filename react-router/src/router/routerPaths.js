@@ -1,6 +1,5 @@
 export default Object.freeze({
-    posts: '/posts',
-    createPost: '/posts/create',
-    viewPost: '/posts/view',
-    editPost: '/posts/edit',
+    items: '/items',
+    viewItem: '/items/view',
+    order: '/order'
 })

@@ -4,34 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e28b6d30-6362-4fb3-9dd8-5ee5dd81310e" name="Changes" comment="completed hw-62">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-react-router-demo/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-react-router-demo/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-react-router-demo/eslint.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-react-router-demo/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-react-router-demo/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-react-router-demo/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-react-router-demo/public/vite.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-react-router-demo/src/Additionally/AppConfig.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-react-router-demo/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-react-router-demo/src/App.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-react-router-demo/src/components/BaseForm.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-react-router-demo/src/components/NavigationBar.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-react-router-demo/src/components/TodoCard.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-react-router-demo/src/components/TodoForm.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-react-router-demo/src/components/TodoList.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-react-router-demo/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-react-router-demo/src/main.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-react-router-demo/src/pages/About.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-react-router-demo/src/pages/Home.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-react-router-demo/src/pages/TaskDetails.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-react-router-demo/src/router/AppRouter.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-react-router-demo/src/templates/MainLayout.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-react-router-demo/vite.config.js" beforeDir="false" />
+    <list default="true" id="e28b6d30-6362-4fb3-9dd8-5ee5dd81310e" name="Changes" comment="completed hw-63">
+      <change afterPath="$PROJECT_DIR$/react-router/src/components/CustomProductCard/CustomCard.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-router/src/components/CustomProductCard/CustomSmallCard.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-router/src/components/FormComponents/CustomInput.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-router/src/pages/Cart.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-router/src/pages/Catalog.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-router/src/pages/OrderForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-router/src/pages/ViewItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-router/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/react-router/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-router/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/react-router/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-router/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/react-router/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-router/src/components/CustomTable/CustomTable.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-router/src/components/CustomTable/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-router/src/components/NavigationBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/react-router/src/components/NavigationBar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-router/src/pages/CreatePost.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-router/src/pages/EditPost.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-router/src/pages/PostsList.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-router/src/pages/ViewPost.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-router/src/router/AppRouter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/react-router/src/router/AppRouter.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-router/src/router/routerPaths.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-router/src/router/routerPaths.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-router/src/utils/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-router/src/utils/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-router/src/utils/nameNormalizer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-router/src/utils/users.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +47,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="hw-62" />
+        <entry key="$PROJECT_DIR$" value="hw-63" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -88,7 +84,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;hw-63&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;hw-64-final-project&quot;,
     &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -181,7 +177,10 @@
       <workItem from="1761420177255" duration="896000" />
       <workItem from="1761498125819" duration="882000" />
       <workItem from="1761570767097" duration="18366000" />
-      <workItem from="1761726748391" duration="5230000" />
+      <workItem from="1761726748391" duration="5299000" />
+      <workItem from="1762613143934" duration="595000" />
+      <workItem from="1763195318931" duration="22281000" />
+      <workItem from="1763808779159" duration="11962000" />
     </task>
     <task id="LOCAL-00001" summary="created new branch hw-35">
       <option name="closed" value="true" />
@@ -487,7 +486,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761594552376</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="completed hw-63">
+      <option name="closed" value="true" />
+      <created>1761736140932</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1761736140932</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -505,7 +512,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="created new branch hw-35.0" />
     <MESSAGE value="created new branch hw-35" />
     <MESSAGE value="created new branch hw-36" />
     <MESSAGE value="completed hw-38" />
@@ -530,6 +536,7 @@
     <MESSAGE value="completed hw-61" />
     <MESSAGE value="added message &quot;city not found&quot;" />
     <MESSAGE value="completed hw-62" />
-    <option name="LAST_COMMIT_MESSAGE" value="completed hw-62" />
+    <MESSAGE value="completed hw-63" />
+    <option name="LAST_COMMIT_MESSAGE" value="completed hw-63" />
   </component>
 </project>

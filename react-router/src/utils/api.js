@@ -1,6 +1,6 @@
 export const fetchData = async (endpoint) => {
     try {
-        const response = await fetch(`https://jsonplaceholder.typicode.com${endpoint}`);
+        const response = await fetch(`https://fakestoreapi.com${endpoint}`);
         if (!response.ok) {
             throw new Error('Помилка мережевого запиту');
         }
@@ -10,19 +10,5 @@ export const fetchData = async (endpoint) => {
         throw error;
     }
 };
-
-
-export const createPost = (payload) => {
-      return fetch('https://jsonplaceholder.typicode.com/posts', {
-            method: 'POST',
-            body: JSON.stringify({
-                ...payload,
-                userId: 1,
-            }),
-            headers: {
-                'Content-type': 'application/json; charset=UTF-8',
-            },
-        })
-}
 
 
